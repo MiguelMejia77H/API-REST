@@ -1,0 +1,127 @@
+El taller consta de crear dos maquinas virtuales las cuales son llamadas DB y API, en cada uno se debe instalar como lo es docker, docker-compose, modificar permiso de repositorios, para la primera maquina se debe seguir unp par de comandos los cuales son estos
+ip a
+   1 ping 10.0.9.5
+   2 apk add nano
+   3 nano /etc/apk/repositories
+   4 apk add docker
+   5 apk add docker-compose
+   6 apk add git
+   7 git clone https://github.com/cfernandom/sistema-recargas-viajes-db.git
+   8 cd sistema-recargas-viajes-db/
+   9 ls -
+  10 ls
+  11 ls -la
+  12 cat docker-compose.yml
+  13 docker-compose up
+  14 nano .env
+  15 docker-compose up
+  16 rc-service docker start
+  17 rc-service docker status
+  18 docker-compose up
+  19 docker-compose up -d
+  20 docke ps -a
+  21 docker ps -a
+  22 docker ps
+  23 docker exec -it db bash
+  24 cat .env
+  25 docker exec -it db bash
+  26 docker-compose ps
+  27 ip a
+  28 ip 10.0.9.5 c -4
+  29 ip 10.0.9.5
+  30 docker --version
+y la maquina virtual API servira para poder extraer datos de la base de datos sistema recargas de viajes utilizando python dentro de dicha maquina, cabe aclarar que estan conectadas a una RED NAT y los comandos utilizados son estos
+ apk update
+   2 apk add nano
+   3 nano /etc/apk/repositories
+   4 apk add docker
+   5 apk add docker-compose
+   6 ip 10.0.9.4
+   7 apk add python
+   8 apk add python3
+   9 apk add pip
+  10 apk add py3-pip
+11 nano /etc/apk/repostorie
+  12 nano /etc/apk/repositories
+  13 python3 -m venv venv
+  14 source venv/bin/activate
+  15 pip install fastapi
+  16 pip install psycopg2
+  17 pip install psycopg2 binary
+  18 pip install psycopg2-binary
+  19 python
+  20 whoami
+  21 history
+  22 nano /etc/apk/repositories
+  23 ls
+  24 source venv/bin/activate
+  25 nano main.py
+  26 fastapi dev main.py
+  27  pip install "fastapi[standard]"
+  28 fastapi dev main.py
+  29 fastapi run
+  30 ip a
+  31 python3 --version
+  32 ls
+  33 cd venv
+  34 cd ..
+  35 source venv/bin/activate
+  36 pip install fastapi
+  37 pip install psycopg2-binary
+  38 nano main.py
+  39 fastapi run
+  40 nano main.py
+  41 fastapi run
+  42 fastapi dev main.py
+  43 fastapi run
+  44 ls
+  45 cd
+  46 fastapi dev main.py
+  47 nano main.py
+  48 fastapi run
+  49 nano main.py
+  50 fastapi run
+  51 nano main.py
+  52 EXIT
+  53 cd ..
+  54 exit
+  55 git init
+  56 apk add git
+  57 git init
+  58 git config --global user.name "miguel"
+  59 git config --global user.email "miguelangelucom@gmail.com"
+  60 git init
+  61 git add .
+  62 git commit -m "Codigo de APIREST"
+  63 git remote add origin https://github.com/MiguelMejia77H/API-REST.git
+  64 git branch -M main
+  65 git push -u origin main
+  66 nano DEPLOYMENT.md
+  67 docker-compose up --build
+  68 ls
+  69 nano docker-compose.yml
+  70 docker-compose up --build
+  71 service docker start
+  72 docker-compose up --build
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
